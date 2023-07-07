@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Smythe', cursive;
+  font-size: 28px;
+}
+
+/* Typography */
+
+.business-name {
+  font-size: 39px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.slogan {
+  font-size: 22.4px;
+  margin: 0;
+}
+
+.item-name {
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+
+.item-ingredients {
+  font-size: 16px;
+  color: #8b8b8b;
+  margin: 0;
+}
+
+.item-price {
+  font-size: 20px;
+  margin-top: 0.5em;
+  margin-bottom: 3em;
+}
+
+.item-name-order,
+.item-price-order {
+  margin: 0;
+}
+
+.item-price-order {
+  margin-left: auto;
+}
+
+.your-order-text {
+  text-align: center;
+}
+
+.total-price-text {
+  margin-top: 0.5em;
+}
+
+/* layout */
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(images/header-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 2em 1em;
+}
+
+main {
+  padding: 0em 1.5em;
+}
+
+.item-emoji {
+  font-size: 70px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.order {
+  display: none;
+}
+
+.order-items {
+  border-bottom: 2px solid #000;
+  padding-bottom: 1em;
+}
+
+.order-item {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.total-price-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  background: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.btn:hover,
+.btn:focus {
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.add-btn-container {
+  margin-left: auto;
+  margin-right: 1em;
+}
+
+.remove-btn {
+  font-size: 12px;
+  color: #bbbbbb;
+}
+
+.remove-btn:hover {
+  color: red;
+}
+
+.complete-order-btn,
+.pay-btn {
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  border: none;
+  background-color: #16db99;
+  color: white;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+.pay-btn {
+  width: 90%;
+  margin-top: 1.5em;
+}
+
+.complete-order-btn:hover,
+.complete-order-btn:focus,
+.pay-btn:hover,
+.pay-btn:focus {
+  transform: scale(1);
+  background-color: #065f46;
+}
+
+/* modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  height: min-content;
+  width: 90%;
+  max-width: 550px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #fff;
+  box-shadow: 0px 0px 80px #757575;
+}
+
+input {
+  font-family: inherit;
+  padding: 1em;
+  width: 90%;
+  margin: 0.5em 0;
+  border: 1.3px solid #757575;
+}
+
+/* thank you message */
+
+.thank-you-message {
+  display: none;
+  font-size: 24px;
+  color: #065f46;
+  background-color: #ecfdf5;
+  padding: 0.5em;
+  margin-top: 1em;
+  text-align: center;
+}

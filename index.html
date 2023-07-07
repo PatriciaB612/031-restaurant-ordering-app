@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Ordering App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="business-name">Jimmy’s Diner</h1>
+        <p class="slogan">The best burgers and pizzas in town.</p>
+      </header>
+      <main>
+        <section class="menu"></section>
+        <section class="order">
+          <p class="your-order-text">Your order</p>
+          <div class="order-items"></div>
+          <div class="order-total-price">
+            <p class="total-price-text">
+              Total price:<span class="total-price"></span>
+            </p>
+          </div>
+          <button
+            type="button"
+            class="btn complete-order-btn"
+            id="complete-btn"
+          >
+            Complete Order
+          </button>
+        </section>
+        <section class="modal payment">
+          <form action="">
+            <p class="modal-title">Enter card details</p>
+            <input
+              type="text"
+              id="cardholder-name"
+              class="cardholder-name"
+              name="cardholderName"
+              placeholder="Enter your name"
+              required
+            />
+            <input
+              type="number"
+              id="card-number"
+              class="card-number"
+              name="cardNumber"
+              placeholder="Enter card number"
+              required
+            />
+            <input
+              type="number"
+              id="cvv-number"
+              class="cvv-number"
+              name="cvvNumber"
+              placeholder="Enter CVV"
+              required
+            />
+            <button type="submit" class="pay-btn btn">Pay</button>
+          </form>
+        </section>
+        <section class="thank-you-message"></section>
+      </main>
+    </div>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
