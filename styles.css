@@ -22,7 +22,7 @@ body {
 }
 
 .item-name {
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 0;
 }
 
@@ -35,7 +35,7 @@ body {
 .item-price {
   font-size: 20px;
   margin-top: 0.5em;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 .item-name-order,
@@ -72,6 +72,7 @@ header {
 
 main {
   padding: 0em 1.5em;
+  margin-bottom: 1em;
 }
 
 .item-emoji {
@@ -113,8 +114,7 @@ button {
   transform: scale(1);
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover {
   transform: scale(1.1);
 }
 
